@@ -1,10 +1,10 @@
-var Layout = require('./layout');
-var React = require('react');
-var Router = require('react-router');
+import Layout from './layout';
+import React from 'react';
+import Router from 'react-router';
 
-module.exports = React.createClass({
+class AppView extends React.Component{
 
-  render: function render() {
+  render() {
 
     return (
       <Layout {...this.props}>
@@ -12,4 +12,5 @@ module.exports = React.createClass({
       </Layout>
     );
   }
-});
+}
+module.exports = AppView;

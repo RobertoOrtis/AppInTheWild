@@ -1,8 +1,8 @@
-var React = require('react');
+import React from 'react'
 
-module.exports = React.createClass({
+class Layout extends React.Component{
 
-  render: function render() {
+  render() {
     var scripts;
     
 
@@ -34,4 +34,5 @@ module.exports = React.createClass({
       </html>
     );
   }
-});
+}
+module.exports = Layout;

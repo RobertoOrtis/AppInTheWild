@@ -18,8 +18,10 @@ module.exports = React.createClass({
         
         <br />
         <br />
-        <a href='/'>go back to index (unahandled)</a>
-        <Link to='/'>go back home</Link>
+        <Link to='/users/123'>Go to User 123</Link>
+        <br />
+        <br />
+        <Link to='/'>go home</Link>
       </div>
     );
   }

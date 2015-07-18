@@ -1,8 +1,10 @@
 var React = require('react');
 var Link = require('react-router').Link;
+var Navigation = require('react-router').Navigation;
+
 
 module.exports = React.createClass({
-
+  mixins: [Navigation],
   displayName: '404 Page Not Found',
 
   render: function render() {
@@ -13,7 +15,9 @@ module.exports = React.createClass({
         <h6>We are sorry but the page you were looking for could not be found!</h6> 
         <br />
         <br />
-        <div onClick={() => this.goBack()}>Go back</div>       
+
+   
+      
       </div>
     );
   }
