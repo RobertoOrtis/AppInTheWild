@@ -1,15 +1,11 @@
-var React = require('react');
-var Link = require('react-router').Link;
+import React, { Component } from 'react';
+//var Link = require('react-router').Link;
+import { Link } from 'react-router';
+import Counter from '../counter/index'
 
-module.exports = React.createClass({
+export default class UserPage extends Component {
 
-  displayName: 'account',
-
-  onButtonClick: function() {
-    alert('Happy Reacting!');
-  },
-
-  render: function render() {
+  render() {
 
     return (
       <div id='account'>
@@ -20,8 +16,9 @@ module.exports = React.createClass({
         <Link to='users'>go to users</Link>
         <br />
         <Link to='/'>go back home</Link>
-
+        <Counter />
       </div>
     );
   }
-});
+
+}
