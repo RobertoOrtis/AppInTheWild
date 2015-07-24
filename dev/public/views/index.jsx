@@ -22,6 +22,15 @@ class IndexView extends React.Component{
         <br />
         <br />
         <Link to='users'>Go to users (handled)</Link>
+        <br />
+        <br />
+        <Link to='counter'>Go to Counter</Link>
+        <br />
+        <br />
+        <Link to='todolist'>Go to TodoListMVC</Link>
+        <br />
+        <br />
+        <Link to='doublecounter'>Go to DoubleCounter</Link>
       </div>
     );
   }
