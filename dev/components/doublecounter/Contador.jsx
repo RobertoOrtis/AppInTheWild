@@ -3,24 +3,23 @@ import React, { Component, PropTypes } from 'react';
 export default class DoubleCounter1 extends Component {
 	//specify propTypes
 	static propTypes = {
-		increment1: PropTypes.func.isRequired,
-		counter1: PropTypes.number.isRequired
-	}
+		incrementar: PropTypes.func.isRequired,
+		contador: PropTypes.number.isRequired
+	};
 	
 	componentDidMount() {
 		console.info("counter 1 component did mount.");
 	}
 
-
 	render() {
-		const { increment1, counter1 } = this.props;
+		const { incrementar, contador } = this.props;
 		return (
 			<div>
 				<h1>Counter</h1>
-				<button onClick={increment1}>increment</button>
-				<div>Total: (<span>{counter1}</span>) times</div>
+				<button onClick={incrementar}>increment</button>
+				<div>Total: (<span>{contador}</span>) times</div>
 
 			</div>
 		);
-	}
+	};
 }

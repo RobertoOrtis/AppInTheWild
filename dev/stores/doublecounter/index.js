@@ -1,2 +1,2 @@
-import { default as doublecounter1 } from './doublecounter1';
-import { default as doublecounter2 } from './doublecounter2';
+export { default as contador2 } from './contador2';
+export contador from './contador';

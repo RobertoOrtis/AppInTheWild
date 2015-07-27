@@ -1,5 +1,7 @@
 import React from 'react'
 
+import LayoutHeader from './LayoutHeader';
+
 class Layout extends React.Component{
 
   render() {
@@ -28,6 +30,7 @@ class Layout extends React.Component{
           </title>
         </head>
         <body>
+          <LayoutHeader />
           {this.props.children}
         </body>      
         {scripts}

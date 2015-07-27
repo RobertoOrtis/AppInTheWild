@@ -9,6 +9,7 @@ import UserPage from "./public/views/users/userPage";
 import Counter from "./public/views/counter/index";
 import TodoList from "./public/views/todolist/index";
 import DoubleCounter from "./public/views/doublecounter/index";
+import RedisTest from "./public/views/redistest/index";
 export default (
   <Route path='/' handler={App}>
     <DefaultRoute name='account' handler={Account}/>
@@ -19,5 +20,6 @@ export default (
 		<Route name='counter' path='counter' handler={Counter} />
 		<Route name='todolist' path='todolist' handler={TodoList} />
 		<Route name='doublecounter' path='doublecounter' handler={DoubleCounter} />
+		<Route name='redistest' path='redistest' handler={RedisTest} />
   </Route>
 );

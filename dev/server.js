@@ -6,7 +6,21 @@ import React from "react";
 import Router from "react-router";
 import renderer from "react-engine";
   
+//Import Redist Client
+import Redis from 'redis';
+//Create Redis client
+const rclient = Redis.createClient();
+//Start Redis Client
+rclient.on('connect', function() {
+  console.log('Redis Client Connected!')
+})
+
 import Routes from "./routes";
+
+  rclient.hmset('frameworks', 'javascript', 'AngularJS', 'css', 'Bootstrap', 'node', 'Express');
+  rclient.hgetall('frameworks', function(err, object) {
+    console.log(object);
+});
 
 const proxy = httpProxy.createProxyServer();
 const app = express();

@@ -3,8 +3,8 @@
   "version": "0.0.1",
   "description": "Base Structure for React App (NodeJS + Express + react-router + react-engine + jsx views + babel es6 + webpack).",
   "scripts": {
-    "clean": "rmdir /s /q build",
-    "clean-prod": "rmdir /s /q distribution",
+    "clean": "rm -rf build",
+    "clean-prod": "rm -rf distribution",
     "compile-build": "babel dev --out-dir build",
     "compile-prod": "babel dev --out-dir distribution",
     "webpack-prod": "webpack -p --progress --colors --config webpack.production.config.js",
@@ -60,6 +60,7 @@
     "react": "^0.13.3",
     "react-redux": "^0.2.2",
     "react-router": "^0.13.3",
+    "redis": "^0.12.1",
     "redux": "^1.0.0-rc",
     "redux-thunk": "^0.1.0",
     "todomvc-app-css": "^2.0.1"
