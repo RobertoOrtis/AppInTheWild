@@ -18,7 +18,7 @@ module.exports = React.createClass({
         
         <br />
         <br />
-        <Link to='/users/123'>Go to User 123</Link>
+        <Link to='/user/123'>Go to User 123</Link>
         <br />
         <br />
         <Link to='/'>go home</Link>

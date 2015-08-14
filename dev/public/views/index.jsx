@@ -21,7 +21,7 @@ class IndexView extends React.Component{
         <a href='/some_unknown'>This is an u nhadled route</a>
         <br />
         <br />
-        <Link to='users'>Go to users (handled)</Link>
+        <Link to='user'>Go to users (handled)</Link>
         <br />
         <br />
         <Link to='counter'>Go to Counter</Link>

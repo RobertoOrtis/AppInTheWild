@@ -1,9 +1,6 @@
 import Routes from './routes';
 import Client from 'react-engine/lib/client';
 
-//import 'todomvc-app-css/index.css';
-
-
 // boot options
 var options = {
   routes: Routes,

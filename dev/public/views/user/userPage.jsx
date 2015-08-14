@@ -13,7 +13,7 @@ export default class UserPage extends Component {
         <h6>Welcome to my Users ID: {this.props.params.id} Page!</h6>
         
         <br />
-        <Link to='users'>go to users</Link>
+        <Link to='user'>go to users</Link>
         <br />
         <Link to='/'>go back home</Link>
         <Counter />
