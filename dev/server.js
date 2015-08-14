@@ -255,7 +255,14 @@ app.get("/counts", function  (req, res) {
 
 //Check and set variable if app is on production or development
 var isProduction = process.env.NODE_ENV === 'production';
-var port = isProduction ? 5000 : 3000;
+
+
+openshift_ipaddress = process.env.OPENSHIFT_NODEJS_IP;
+openshift_port      = process.env.OPENSHIFT_NODEJS_PORT || 8080;
+
+//var port = isProduction ? 5000 : 3000;
+var ipaddress = isProduction ? openshift_ipaddress : 'http://localhost';
+var port = isProduction ? openshift_port : 3000;
 
 if (!isProduction) {
 
@@ -299,7 +306,7 @@ if (!isProduction) {
     res.render(req.url,{isProduction});
   });
 
-  app.listen(port, function () {
+  app.listen(port, ipaddress, function () {
     console.log('Production Server running on port ' + port);
   }); 
 
